@@ -1,4 +1,19 @@
+/* ça c'etait déjà là */
 html {
   height: 100%;
   width: 100%;
 }
+
+/* Les Couleurs */
+:root{
+  --Soft_black: #01011D;
+  --Paragraph_col: #03045E;
+  --Glass_paragraph_col: #03045E80;
+  --CTA_col: #0077B6;
+  --Button_col: #42A5D9;
+  --Glass_button_col: #42A5D980;
+  --Icon_col: #90E0EF;
+  --Darken_white: #F9F9F9;
+  --Glass_darken_white: #F9F9F980;
+}
+/* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
