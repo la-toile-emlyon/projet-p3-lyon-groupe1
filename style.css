@@ -103,10 +103,15 @@ nav{
 }
 .sectionFlex5050{
   width: 50%;
-  display: flex;
-  align-items: center;
 }
 .sectionFlexSpaceEven{
   justify-content: space-evenly;
   height: 100%;
+}
+.setFlex{
+  display: flex;
+  align-items: center;
+}
+.flexColumn{
+  flex-direction: column;
 }
