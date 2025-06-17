@@ -4,8 +4,9 @@ html {
   width: 100%;
 }
 
-/* Les Couleurs */
+/* Les Variables */
 :root{
+  /* Colors */
   --Soft_black: #01011D;
   --Paragraph_col: #03045E;
   --Glass_paragraph_col: #03045E80;
@@ -15,5 +16,36 @@ html {
   --Icon_col: #90E0EF;
   --Darken_white: #F9F9F9;
   --Glass_darken_white: #F9F9F980;
+  /* Font items simplified */
+  --semi_bold: 600;
+  --medium: 500;
 }
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
+
+/* Font */
+*{
+  font-family: "Roboto", sans-serif;
+}
+h1{
+  font-weight: bold;
+  font-size: 80px;
+}
+h2{
+  font-weight: var(--semi_bold);
+  font-size: 50px;
+}
+h3{
+  font-weight: var(--medium);
+  font-size: 22px;
+}
+p{
+  font-size: 18px;
+}
+.highText{
+  font-weight: bold;
+  font-size: 18px;
+}
+.button{
+  font-weight: bold;
+  font-size: 20px;
+}
