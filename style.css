@@ -1,15 +1,3 @@
-/* ça c'etait déjà là */
-html {
-  height: 100%;
-  width: 100%;
-}
-/* Modification to all*/
-*{
-  padding: 0;
-  margin: 0;
-  font-family: "Roboto", sans-serif;
-}
-
 /* Les Variables */
 :root{
   /* Colors*/
@@ -31,6 +19,22 @@ html {
   --radius: 20px;
 }
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
+
+/* ça c'etait déjà là */
+html {
+  height: 100%;
+  width: 100%;
+}
+/* Modification to all*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+body{
+  background-color: var(--Darken_white);
+}
+
 
 /* Text Items */
 h1{
@@ -63,4 +67,11 @@ button{
   background-color: var(--CTA_col);
   padding: 20px 50px;
 	border: none;
+}
+
+/* Header */
+header{
+  background-image: url(backdrop.png);
+  background-size: cover;
+  height: 100vh;
 }
