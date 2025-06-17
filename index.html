@@ -6,32 +6,65 @@
   <meta name="viewport" content="width=device-width" />
   <title>Sanitoit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="index.css" rel="stylesheet" type="text/css" />
   <!-- <link rel="shortcut icon" href="istockphoto-1321675978-612x612.jpg" type="image/x-icon"> -->
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap')
-
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
 </head>
 <!-- Les classes: highText = paragraphe important; buttonInactive = bouton moins important;
  sectionFlexSpaceEven = pour section flex, separe les element avec un espace egale;
  sectionFlex5050 = une section est mi en flex et a une width a 50% -->
+ 
+ <body>
+   <header id="header">
+     <nav>
+       <section class="sectionFlex5050">
+         <a href="" id="logo">
+           <img src="LogoSanitoit.png" alt="Sanitoit">
+          </a>
+        </section>
+        <section class="sectionFlex5050 sectionFlexSpaceEven">
+          <a href="#header">Acceuil</a>
+          <a href="doc.html">Documentation</a>
+          <button class="buttonInactive">Télécharger l'application</button>
+        </section>
+      </nav>
+<!-- Hero section -->
+<section>
+  <section>
+    <h1></h1>
+    <p></p>
+  </section>
+  <section>
+    <img src="" alt="">
+    <button>Telecharger application</button>
+  </section>
+</section>
+    </header>
+  <main>
+    <!-- Context -->
+    <section>
+      <section>
+        <article></article> 
+        <!-- duplicate article above *3 -->
+      </section>
+      <section>
+        <h2></h2>
+        <p></p>
+        <p></p>
+      </section>
+    </section>
 
-<body>
-  <header id="header">
-    <nav>
-      <section class="sectionFlex5050">
-        <a href="" id="logo">
-          <img src="LogoSanitoit.png" alt="Sanitoit">
-        </a>
+    <!-- Insalubrité card -->
+     <section>
+      <h3></h3>
+      <section>
+        <article></article>
+        <!-- Duplicate article... idk how many -->
       </section>
-      <section class="sectionFlex5050 sectionFlexSpaceEven">
-        <a href="#header">Acceuil</a>
-        <a href="doc.html">Documentation</a>
-        <button class="buttonInactive">Télécharger l'application</button>
-      </section>
-    </nav>
-  </header>
-  
-  <script src="script.js" type="text/javascript"></script>
+     </section>
+  </main>
 </body>
+<script src="script.js" type="text/javascript"></script>
 
 </html>
