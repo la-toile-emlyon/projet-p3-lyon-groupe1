@@ -13,17 +13,18 @@
 </head>
 <!-- Les classes: highText = paragraphe important; buttonInactive = bouton moins important;
  sectionFlexSpaceEven = pour section flex, separe les element avec un espace egale;
- sectionFlex5050 = une section est mi en flex et a une width a 50% -->
+ sectionFlex5050 = une section est mi en width a 50%; flexColumn = set flex direction to column;
+ setFlex = set element to display flex + align it to center -->
  
  <body>
    <header id="header">
      <nav>
-       <section class="sectionFlex5050">
+       <section class="setFlex sectionFlex5050">
          <a href="" id="logo">
            <img src="LogoSanitoit.png" alt="Sanitoit">
           </a>
         </section>
-        <section class="sectionFlex5050 sectionFlexSpaceEven">
+        <section class="setFlex sectionFlex5050 sectionFlexSpaceEven">
           <a href="#header">Acceuil</a>
           <a href="doc.html">Documentation</a>
           <button class="buttonInactive">Télécharger l'application</button>
@@ -31,11 +32,11 @@
       </nav>
 <!-- Hero section -->
 <section>
-  <section>
-    <h1></h1>
-    <p></p>
+  <section class="setFlex sectionFlex5050 flexColumn">
+    <h1>Un logement indigne n'est pas une fatalité</h1>
+    <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir grâce à notre application en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape de la démarche.</p>
   </section>
-  <section>
+  <section class="setFlex sectionFlex5050 flexColumn">
     <img src="" alt="">
     <button>Telecharger application</button>
   </section>
@@ -45,7 +46,15 @@
     <!-- Context -->
     <section>
       <section>
-        <article></article> 
+        <article>
+          <div>
+            <h2></h2>
+            <p></p>
+          </div>
+          <div>
+            <img src="" alt="">
+          </div>
+        </article> 
         <!-- duplicate article above *3 -->
       </section>
       <section>
@@ -59,10 +68,15 @@
      <section>
       <h3></h3>
       <section>
-        <article></article>
+        <article>
+          <img src="" alt="">
+          <p></p>
+        </article>
         <!-- Duplicate article... idk how many -->
       </section>
      </section>
+
+     <!--  -->
   </main>
 </body>
 <script src="script.js" type="text/javascript"></script>
