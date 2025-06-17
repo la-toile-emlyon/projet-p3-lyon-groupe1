@@ -30,6 +30,7 @@ html {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 body{
   background-color: var(--Darken_white);
@@ -37,23 +38,46 @@ body{
 img{
   width: 100%;
 }
-
+/* flex class */
+.sectionFlex5050{
+  width: 50%;
+}
+.sectionFlexSpaceEven{
+  justify-content: space-evenly;
+  height: 100%;
+}
+.setFlex{
+  display: flex;
+  align-items: center;
+}
+.flexColumn{
+  flex-direction: column;
+}
+.container{
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+}
 
 /* Text Items */
 h1{
   font-weight: bold;
-  font-size: 80px;
+  font-size: 48px;
+  color: var(--Paragraph_col);
 }
 h2{
   font-weight: var(--semi_bold);
-  font-size: 50px;
+  font-size: 38px;
+  color: var(--Paragraph_col);
 }
 h3{
   font-weight: var(--medium);
   font-size: 22px;
+  color: var(--Paragraph_col);
 }
 p{
   font-size: 18px;
+  color: var(--Paragraph_col);
 }
 .highText{
   font-weight: bold;
@@ -101,17 +125,10 @@ nav{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
   height: 12%;
 }
-.sectionFlex5050{
-  width: 50%;
-}
-.sectionFlexSpaceEven{
-  justify-content: space-evenly;
-  height: 100%;
-}
-.setFlex{
-  display: flex;
-  align-items: center;
-}
-.flexColumn{
-  flex-direction: column;
+
+/* main */
+main{
+  background-image: url(backdropS2.png);
+  background-size: cover;
+  height: 100vh;
 }
