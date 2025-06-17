@@ -6,10 +6,10 @@
   --Glass_paragraph_col: #03045E80;
   --CTA_col: #0077B6;
   --Button_col: #42A5D9;
-  --Glass_button_col: #42a5d980;
+  --Glass_button_col: #42A5D980;
   --Icon_col: #90E0EF;
-  --Broken_white: #F9F9F9;
-  --Glass_broken_white: #F9F9F980;
+  --Darken_white: #F9F9F9;
+  --Glass_darken_white: #F9F9F980;
 
   /* Font items simplified */
   --semi_bold: 600;
