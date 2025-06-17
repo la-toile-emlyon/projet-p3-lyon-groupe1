@@ -32,7 +32,10 @@ html {
   font-family: "Roboto", sans-serif;
 }
 body{
-  background-color: var(--Darken_white);
+  background-color: var(--Broken_white);
+}
+img{
+  width: 100%;
 }
 
 
@@ -56,6 +59,11 @@ p{
   font-weight: bold;
   font-size: 18px;
 }
+a{
+  text-decoration: none;
+  color: var(--Paragraph_col);
+  padding: 20px 0px;
+}
 
 /* Button */
 button{
@@ -63,10 +71,15 @@ button{
   font-size: 20px;
   text-align: center;
   border-radius: var(--radius);
-  color: var(--Darken_white);
+  color: var(--Broken_white);
   background-color: var(--CTA_col);
   padding: 20px 50px;
 	border: none;
+}
+.buttonInactive{
+  background-color: var(--Broken_white);
+  color: var(--CTA_col);
+  border: solid 1px var(--CTA_col);
 }
 
 /* Header */
@@ -74,4 +87,26 @@ header{
   background-image: url(backdrop.png);
   background-size: cover;
   height: 100vh;
+}
+#logo{
+  display: inline-block;
+  width: 84px;
+}
+nav{
+  padding: 10px 50px;
+  background-color: var(--Broken_white);
+  display: flex;
+  align-items: center;
+  /* position: fixed; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
+  height: 12%;
+}
+.sectionFlex5050{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.sectionFlexSpaceEven{
+  justify-content: space-evenly;
+  height: 100%;
 }
