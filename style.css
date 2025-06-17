@@ -3,10 +3,16 @@ html {
   height: 100%;
   width: 100%;
 }
+/* Modification to all*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
 
 /* Les Variables */
 :root{
-  /* Colors */
+  /* Colors*/
   --Soft_black: #01011D;
   --Paragraph_col: #03045E;
   --Glass_paragraph_col: #03045E80;
@@ -16,16 +22,17 @@ html {
   --Icon_col: #90E0EF;
   --Darken_white: #F9F9F9;
   --Glass_darken_white: #F9F9F980;
+
   /* Font items simplified */
   --semi_bold: 600;
   --medium: 500;
+
+  /* Border Radius */
+  --radius: 20px;
 }
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
 
-/* Font */
-*{
-  font-family: "Roboto", sans-serif;
-}
+/* Text Items */
 h1{
   font-weight: bold;
   font-size: 80px;
@@ -45,7 +52,15 @@ p{
   font-weight: bold;
   font-size: 18px;
 }
-.button{
+
+/* Button */
+button{
   font-weight: bold;
   font-size: 20px;
+  text-align: center;
+  border-radius: var(--radius);
+  color: var(--Darken_white);
+  background-color: var(--CTA_col);
+  padding: 20px 50px;
+	border: none;
 }
