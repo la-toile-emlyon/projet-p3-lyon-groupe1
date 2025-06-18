@@ -108,7 +108,7 @@ button{
 
 /* Header */
 header{
-  background-image: url(backdrop.png);
+  background-image: url(Images/backdrop.png);
   background-size: cover;
   height: 100vh;
 }
@@ -128,7 +128,7 @@ nav{
 
 /* main */
 main{
-  background-image: url(backdropS2.png);
+  background-image: url(Images/backdropS2.png);
   background-size: cover;
   height: 100vh;
 }
