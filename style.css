@@ -4,19 +4,20 @@
   --Soft_black: #01011D;
   --Paragraph_col: #03045E;
   --Glass_paragraph_col: #03045E80;
+  --Glass_darken_white: #F9F9F980;
   --CTA_col: #0077B6;
   --Button_col: #42A5D9;
   --Glass_button_col: #42A5D980;
   --Icon_col: #90E0EF;
   --Darken_white: #F9F9F9;
-  --Glass_darken_white: #F9F9F980;
 
   /* Font items simplified */
   --semi_bold: 600;
   --medium: 500;
 
-  /* Border Radius */
+  /* Border */
   --radius: 20px;
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
 }
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
 
@@ -29,8 +30,8 @@ html {
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  text-align: center;
 }
 body{
   background-color: var(--Darken_white);
@@ -38,13 +39,13 @@ body{
 img{
   width: 100%;
 }
+
 /* flex class */
 .sectionFlex5050{
   width: 50%;
 }
-.sectionFlexSpaceEven{
-  justify-content: space-evenly;
-  height: 100%;
+.sectionFlexSpaceBetween{
+  justify-content: space-between;
 }
 .setFlex{
   display: flex;
@@ -57,6 +58,13 @@ img{
   max-width: 1440px;
   margin: auto;
   width: 100%;
+  padding: 3rem;
+}
+.marginBottom{
+  margin-bottom: 16px;
+}
+.textAlignCenter{
+  text-align: center;
 }
 
 /* Text Items */
@@ -86,7 +94,6 @@ p{
 a{
   text-decoration: none;
   color: var(--Paragraph_col);
-  padding: 20px 0px;
 }
 
 /* Button */
@@ -97,7 +104,7 @@ button{
   border-radius: var(--radius);
   color: var(--Darken_white);
   background-color: var(--CTA_col);
-  padding: 20px 50px;
+  padding: 15px 30px;
 	border: none;
 }
 .buttonInactive{
@@ -106,35 +113,52 @@ button{
   border: solid 1px var(--CTA_col);
 }
 
-/* Header */
+/* <------------ HEADER ------------> */
 header{
   background-image: url(Images/backdrop.png);
   background-size: cover;
   height: 100vh;
 }
 #logo{
-  display: inline-block;
-  width: 84px;
+  display: flex;
+  width: 12%;
 }
 nav{
-  padding: 10px 50px;
   background-color: var(--Darken_white);
   display: flex;
   align-items: center;
-  /* position: fixed; */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
-  height: 12%;
+  padding: 0 2rem;
 }
 
-/* main */
+/* <------------ MAIN ------------> */
+
+/* <------------ SECTION PROBLEMATIQUE ------------> */
 main{
   background-image: url(Images/backdropS2.png);
   background-size: cover;
-  height: 100vh;
 }
 
-/* card */
-.card{
+.contexte {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.chiffre-card {
+  box-shadow: var(--shadow);
   border-radius: 20px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 25%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.chiffre-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chiffre-card img {
+  width: 9%;
 }

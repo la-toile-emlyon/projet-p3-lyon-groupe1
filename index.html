@@ -12,71 +12,70 @@
   </style>
 </head>
 <!-- Les classes: highText = paragraphe important; buttonInactive = bouton moins important;
- sectionFlexSpaceEven = pour section flex, separe les element avec un espace egale;
+ sectionFlexSpaceBetween = pour section flex, separe les element avec un espace egale;
  sectionFlex5050 = une section est mi en width a 50%; flexColumn = set flex direction to column;
- setFlex = set element to display flex + align it to center; container = class for container -->
- 
- <body>
-   <header id="header">
-     <nav>
-       <section class="setFlex sectionFlex5050">
-         <a href="" id="logo">
-           <img src="Images/LogoSanitoit.png" alt="Sanitoit">
-          </a>
-        </section>
-        <section class="setFlex sectionFlex5050 sectionFlexSpaceEven">
-          <a href="#header" class="highText">Acceuil</a>
-          <a href="doc.html" class="highText">Documentation</a>
-          <button class="buttonInactive">Recevoir l'application</button>
-        </section>
-      </nav>
-<!-- Hero section -->
-<section class="setFlex container">
-  <section class="setFlex sectionFlex5050 flexColumn">
-    <h1>Un logement indigne n'est pas une fatalité</h1>
-    <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir grâce à notre application en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape de la démarche.</p>
-  </section>
-  <section class="setFlex sectionFlex5050 flexColumn">
-    <img src="Images/mockupPhone1.png" alt="">
-    <button>Recevoir l'application</button>
-  </section>
-</section>
-    </header>
-  <main>
-    <!-- Context -->
-    <section class="container">
-      <section class="setFlex">
-        <article class="card">
-          <div>
-            <h2>000 000</h2>
-            <p>lorem</p>
-          </div>
-          <div>
-            <img src="" alt="">
-          </div>
-        </article> 
-        <!-- duplicate article above *3 -->
+ setFlex = set element to display flex + align it to center; container = class for container;
+ marginBottom = add margin bottom to element; textAlignCenter-->
+
+<body>
+  <nav>
+    <section class="setFlex sectionFlex5050">
+      <a href="" id="logo">
+        <img src="Images/LogoSanitoit.png" alt="Sanitoit">
+      </a>
+    </section>
+    <section class="setFlex sectionFlex5050 sectionFlexSpaceBetween">
+      <a href="#header" class="highText">Acceuil</a>
+      <a href="doc.html" class="highText">Documentation</a>
+      <button class="buttonInactive">Recevoir l'application</button>
+    </section>
+  </nav>
+  <header id="header" class="marginBottom">
+    <!-- Hero section -->
+    <section class="setFlex container">
+      <section class="setFlex sectionFlex5050 flexColumn textAlignCenter">
+        <h1 class="marginBottom">Un logement indigne n'est pas une fatalité</h1>
+        <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir grâce à notre application
+          en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape
+          de la démarche.</p>
       </section>
-      <section>
-<h2>Contexte</h2>
-            <p>En France, sur 38,2 millions de logements environ 600 000 logements sont insalubres, affectant jusqu’à 1,3 million de personnes. Ces logements, souvent anciens et mal entretenus, présentent des risques graves pour la santé (maladies respiratoires, humidité, plomb) et aggravent l’isolement social.</p>
-            <p>Le nombre réel de logements insalubres est  sous-estimé, car de nombreux cas ne sont pas déclarés. Cela souligne la nécessité d’une meilleure détection, d’une mobilisation accrue et d’un accès facilité aux dispositifs de signalement.</p>
+      <section class="setFlex sectionFlex5050 flexColumn">
+        <img src="Images/mockupPhone1.png" alt="">
+        <button>Recevoir l'application</button>
       </section>
     </section>
-
-    <!-- Insalubrité card -->
-     <section>
-      <h3></h3>
-      <section>
-        <article>
-          <img src="" alt="">
-          <p></p>
-        </article>
-        <!-- Duplicate article... idk how many -->
-      </section>
-     </section>
-
-     <!--  -->
+  </header>
+  <main>
+    <section id="problematique">
+      <div class="contexte">
+        <h2>Contexte</h2>
+        <p>En France, sur 38,2 millions de logements environ 600 000 logements sont insalubres, affectant jusqu’à 1,3 million de personnes. Ces logements, souvent anciens et mal entretenus, présentent des risques graves pour la santé (maladies respiratoires, humidité, plomb) et aggravent l’isolement social.</p>
+        <p>Le nombre réel de logements insalubres est  sous-estimé, car de nombreux cas ne sont pas déclarés. Cela souligne la nécessité d’une meilleure détection, d’une mobilisation accrue et d’un accès facilité aux dispositifs de signalement.</p>
+      </div>
+      <div class="container-chiffre-card">
+        <div class="chiffre-card">
+          <div>
+            <h2>600 000</h2>
+            <h3>Logements insalubres en France</h3>
+          </div>
+          <img src="Images/houseSymbol.png" alt="icône maison">
+        </div>
+        <div class="chiffre-card">
+          <div>
+            <h2>72 134</h2>
+            <h3>Signalement enregistrés</h3>
+          </div>
+          <img src="Images/bookSymbol.png" alt="icône livre">
+        </div>
+        <div class="chiffre-card">
+          <div>
+            <h2>10 341</h2>
+            <h3>Foyers sortie du mal-logement</h3>
+          </div>
+          <img src="Images/guySymbol.png" alt="icône personne">
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <p>&copyLyon Groupe 1</p>
