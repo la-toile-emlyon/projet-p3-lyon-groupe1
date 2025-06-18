@@ -55,7 +55,6 @@ img {
 
 .setFlex {
   display: flex;
-  align-items: center;
 }
 
 .flexColumn {
@@ -66,11 +65,11 @@ img {
   max-width: 1440px;
   margin: auto;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
 }
 
 .marginBottom {
-  margin-bottom: 16px;
+  margin-bottom: 3rem;
 }
 
 .marginTop {
@@ -79,6 +78,10 @@ img {
 
 .textAlignCenter {
   text-align: center;
+}
+
+.alignItemCenter{
+    align-items: center;
 }
 
 /* Text Items */
@@ -163,7 +166,7 @@ nav {
   display: flex;
   align-items: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
-  padding: 0 2rem;
+  padding: 0 5rem;
   position: fixed;
 }
 
@@ -176,9 +179,7 @@ nav {
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
 #problematique {
-  /* background-image: url(Images/backdropS2.png);
-  background-size: cover; */
-  padding: 2rem;
+  padding: 2rem 5rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -242,7 +243,7 @@ nav {
 }
 
 .probleme-card {
-  width: 23%;
+  width: 22%;
   padding: 1rem;
   box-shadow: var(--shadow);
   border-radius: 20px;
@@ -265,12 +266,14 @@ nav {
   background-size: cover;
 }
 #vousAidez article{
-  width: 33%;
+  width: 25%;
   padding: 2%;
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 #vousAidez article img{
   margin-bottom: 16px;
-  height: 400px;
   object-fit: contain;
 }
 
@@ -278,7 +281,7 @@ nav {
 
 #partenaires {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 
 .container-partenaires {
@@ -289,7 +292,9 @@ nav {
 
 .container-partenaires img {
   width: 30%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   box-shadow: var(--shadow);
   border-radius: 20px;
 }
+
+/* <------------ FOOTER ------------> */
