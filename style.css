@@ -1,5 +1,5 @@
 /* Les Variables */
-:root{
+:root {
   /* Colors*/
   --Soft_black: #01011D;
   --Paragraph_col: #03045E;
@@ -19,6 +19,7 @@
   --radius: 20px;
   --shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
 }
+
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
 
 /* ça c'etait déjà là */
@@ -26,81 +27,101 @@ html {
   height: 100%;
   width: 100%;
 }
+
 /* Modification to all*/
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-body{
+
+body {
   background-color: var(--Darken_white);
 }
-img{
+
+img {
   width: 100%;
 }
 
 /* flex class */
-.sectionFlex5050{
+.sectionFlex5050 {
   width: 50%;
 }
-.sectionFlexSpaceBetween{
+
+.sectionFlexSpaceBetween {
   justify-content: space-between;
 }
-.setFlex{
+
+.setFlex {
   display: flex;
   align-items: center;
 }
-.flexColumn{
+
+.flexColumn {
   flex-direction: column;
 }
-.container{
+
+.container {
   max-width: 1440px;
   margin: auto;
   width: 100%;
   padding: 1rem 3rem;
 }
-.marginBottom{
+
+.marginBottom {
   margin-bottom: 16px;
 }
-.marginTop{
+
+.marginTop {
   margin-top: 16px;
 }
-.textAlignCenter{
+
+.textAlignCenter {
   text-align: center;
 }
 
 /* Text Items */
-h1{
+h1 {
   font-weight: bold;
   font-size: 48px;
   color: var(--Paragraph_col);
 }
-h2{
+
+h2 {
   font-weight: var(--semi_bold);
   font-size: 38px;
   color: var(--Paragraph_col);
 }
-h3{
+
+h3 {
   font-weight: var(--medium);
   font-size: 22px;
   color: var(--Paragraph_col);
 }
-p{
+
+p {
   font-size: 18px;
   color: var(--Paragraph_col);
 }
-.highText{
+
+.highText {
   font-weight: bold;
   font-size: 18px;
 }
-a{
+
+a {
   text-decoration: none;
   color: var(--Paragraph_col);
 }
 
+.currentPage {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
 /* Button */
-button{
+button {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -108,26 +129,36 @@ button{
   color: var(--Darken_white);
   background-color: var(--CTA_col);
   padding: 15px 30px;
-	border: none;
+  border: none;
 }
-.buttonInactive{
+
+.buttonInactive {
   background-color: var(--Darken_white);
   color: var(--CTA_col);
   border: solid 1px var(--CTA_col);
 }
 
+.downloadButt:hover {
+  border: none;
+  color: var(--Darken_white);
+  background-color: var(--Button_col);
+  transform: scale(1.1);
+}
+
 /* <------------ HEADER ------------> */
-header{
+header {
   background-image: url(Images/backdrop.png);
   background-size: cover;
   padding: 2rem 0;
   padding-top: 65px;
 }
-#logo{
+
+#logo {
   display: flex;
   width: 12%;
 }
-nav{
+
+nav {
   background-color: var(--Darken_white);
   display: flex;
   align-items: center;
@@ -136,10 +167,15 @@ nav{
   position: fixed;
 }
 
+.navHover:hover {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
 /* <------------ MAIN ------------> */
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
-main{
+main {
   background-image: url(Images/backdropS2.png);
   background-size: cover;
 }
@@ -177,7 +213,7 @@ main{
   justify-content: space-between;
 }
 
-.chiffre-card > div {
+.chiffre-card>div {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -186,4 +222,10 @@ main{
 .chiffre-card img {
   width: 15%;
   object-fit: contain;
+}
+
+.probleme-card {
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  background-color: var(--Darken_white);
 }

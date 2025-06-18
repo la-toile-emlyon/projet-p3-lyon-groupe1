@@ -11,11 +11,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
 </head>
-<!-- Les classes: highText = paragraphe important; buttonInactive = bouton moins important;
- sectionFlexSpaceBetween = pour section flex, separe les element avec un espace egale;
- sectionFlex5050 = une section est mi en width a 50%; flexColumn = set flex direction to column;
- setFlex = set element to display flex + align it to center; container = class for container;
- marginBottom = add margin bottom to element; textAlignCenter-->
+<!--
+  Les classes:
+ highText; buttonInactive; sectionFlexSpaceBetween; 
+ sectionFlex5050; flexColumn; setFlex; container; 
+ marginBottom; textAlignCenter; downloadButt; navHover
+ -->
 
 <body>
   <nav>
@@ -25,9 +26,9 @@
       </a>
     </section>
     <section class="setFlex sectionFlex5050 sectionFlexSpaceBetween">
-      <a href="#header" class="highText">Acceuil</a>
-      <a href="doc.html" class="highText">Documentation</a>
-      <button class="buttonInactive">Recevoir l'application</button>
+      <a href="#header" class="highText currentPage navHover">Acceuil</a>
+      <a href="doc.html" class="highText navHover">Documentation</a>
+      <button class="buttonInactive downloadButt">Recevoir l'application</button>
     </section>
   </nav>
   <header id="header" class="marginBottom">
@@ -35,13 +36,14 @@
     <section class="setFlex container">
       <section class="setFlex sectionFlex5050 flexColumn textAlignCenter">
         <h1 class="marginBottom">Un logement indigne n'est pas une fatalité</h1>
-        <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir grâce à notre application
+        <p class="marginBottom">Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir
+          grâce à notre application
           en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape
           de la démarche.</p>
+        <button class="downloadButt">Recevoir l'application</button>
       </section>
       <section class="setFlex sectionFlex5050 flexColumn">
         <img src="Images/mockupPhone1v2.png" alt="" class="marginBottom marginTop">
-        <button>Recevoir l'application</button>
       </section>
     </section>
   </header>
@@ -50,8 +52,12 @@
       <div class="partie1">
         <div class="contexte">
           <h2>Contexte</h2>
-          <p>En France, sur 38,2 millions de logements environ 600 000 logements sont insalubres, affectant jusqu’à 1,3 million de personnes. Ces logements, souvent anciens et mal entretenus, présentent des risques graves pour la santé (maladies respiratoires, humidité, plomb) et aggravent l’isolement social.</p>
-          <p>Le nombre réel de logements insalubres est  sous-estimé, car de nombreux cas ne sont pas déclarés. Cela souligne la nécessité d’une meilleure détection, d’une mobilisation accrue et d’un accès facilité aux dispositifs de signalement.</p>
+          <p>En France, sur 38,2 millions de logements environ 600 000 logements sont insalubres, affectant jusqu’à 1,3
+            million de personnes. Ces logements, souvent anciens et mal entretenus, présentent des risques graves pour
+            la santé (maladies respiratoires, humidité, plomb) et aggravent l’isolement social.</p>
+          <p>Le nombre réel de logements insalubres est sous-estimé, car de nombreux cas ne sont pas déclarés. Cela
+            souligne la nécessité d’une meilleure détection, d’une mobilisation accrue et d’un accès facilité aux
+            dispositifs de signalement.</p>
         </div>
         <div class="container-chiffre-card">
           <div class="chiffre-card">
@@ -79,6 +85,14 @@
       </div>
       <div class="partie2">
         <h2>Un logement insalubre peut présenter</h2>
+        <div class="container-probleme">
+          <div class="probleme-card">
+            <div>
+
+            </div>
+            <p>Humidité excessive et ou moisissure</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
