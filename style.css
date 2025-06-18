@@ -53,6 +53,10 @@ img {
   justify-content: space-between;
 }
 
+.sectionFlexSpaceEven {
+  justify-content: space-evenly;
+}
+
 .setFlex {
   display: flex;
 }
@@ -65,7 +69,7 @@ img {
   max-width: 1440px;
   margin: auto;
   width: 100%;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
 }
 
 .marginBottom {
@@ -125,6 +129,7 @@ a {
 
 /* Button */
 button {
+  width: 50%;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -133,6 +138,7 @@ button {
   background-color: var(--CTA_col);
   padding: 15px 30px;
   border: none;
+  transition: scale 0.3s ease;
 }
 
 .buttonInactive {
@@ -145,11 +151,11 @@ button {
   border: none;
   color: var(--Darken_white);
   background-color: var(--Button_col);
-  transform: scale(1.1);
+  scale: 1.02;
 }
 
 /* <------------ HEADER ------------> */
-header {
+#header {
   background-image: url(Images/backdrop.png);
   background-size: cover;
   padding: 2rem 0;
@@ -175,6 +181,15 @@ nav {
   color: var(--Button_col);
 }
 
+.accroche {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
 /* <------------ MAIN ------------> */
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
@@ -183,6 +198,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  background-image: url(Images/backdropS2.png);
+  background-size: cover;
 }
 
 .partie1 {
@@ -239,11 +256,11 @@ nav {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .probleme-card {
-  width: 22%;
+  width: 30%;
   padding: 1rem;
   box-shadow: var(--shadow);
   border-radius: 20px;
@@ -282,6 +299,8 @@ nav {
 #partenaires {
   text-align: center;
   padding: 2rem 5rem;
+  background-image: url(Images/backdropS4.png);
+  background-size: cover;
 }
 
 .container-partenaires {
@@ -298,3 +317,12 @@ nav {
 }
 
 /* <------------ FOOTER ------------> */
+footer article{
+  display: flex;
+}
+#findUs{
+  display: flex;
+}
+#findUs img{
+width: 4%;
+}
