@@ -175,18 +175,22 @@ nav {
 /* <------------ MAIN ------------> */
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
-main {
-  background-image: url(Images/backdropS2.png);
-  background-size: cover;
+#problematique {
+  /* background-image: url(Images/backdropS2.png);
+  background-size: cover; */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 .partie1 {
   display: flex;
   flex-direction: row-reverse;
+  gap: 5rem;
 }
 
 .contexte {
-  padding: 0 2rem;
   text-align: center;
   width: 50%;
   display: flex;
@@ -195,7 +199,6 @@ main {
 }
 
 .container-chiffre-card {
-  padding: 0 2rem;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -224,8 +227,69 @@ main {
   object-fit: contain;
 }
 
+.partie2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-probleme {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .probleme-card {
+  width: 23%;
+  padding: 1rem;
   box-shadow: var(--shadow);
   border-radius: 20px;
   background-color: var(--Darken_white);
+  text-align: center;
+}
+
+.probleme-card > div {
+  margin-bottom: 1rem;
+}
+
+.probleme-card img {
+  width: 20%;
+  object-fit: contain;
+}
+
+/* <------------ SECTION VOUS AIDEZ ------------> */
+#vousAidez {
+  background-image: url(Images/backdropS3.png);
+  background-size: cover;
+}
+#vousAidez article{
+  width: 33%;
+  padding: 2%;
+}
+#vousAidez article img{
+  margin-bottom: 16px;
+  height: 400px;
+  object-fit: contain;
+}
+
+/* <------------ SECTION PARTENAIRES ------------> */
+
+#partenaires {
+  text-align: center;
+  padding: 2rem;
+}
+
+.container-partenaires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-partenaires img {
+  width: 30%;
+  margin-top: 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
 }
