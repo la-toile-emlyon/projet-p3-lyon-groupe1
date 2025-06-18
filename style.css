@@ -107,6 +107,14 @@ h3 {
   color: var(--Paragraph_col);
 }
 
+.h2-spe {
+  font-size: 30px;
+}
+
+.h3-spe {
+  font-size: 18px;
+}
+
 p {
   font-size: 18px;
   color: var(--Paragraph_col);
@@ -198,8 +206,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  background-image: url(Images/backdropS2.png);
-  background-size: cover;
+  /* background-image: url(Images/backdropS3.png);
+  background-size: cover; */
 }
 
 .partie1 {
@@ -278,10 +286,10 @@ nav {
 }
 
 /* <------------ SECTION VOUS AIDEZ ------------> */
-#vousAidez {
-  background-image: url(Images/backdropS3.png);
+/* #vousAidez {
+  background-image: url(Images/backdropS2.png);
   background-size: cover;
-}
+} */
 #vousAidez article{
   width: 25%;
   padding: 2%;
@@ -299,8 +307,8 @@ nav {
 #partenaires {
   text-align: center;
   padding: 2rem 5rem;
-  background-image: url(Images/backdropS4.png);
-  background-size: cover;
+  /* background-image: url(Images/backdropS4.png);
+  background-size: cover; */
 }
 
 .container-partenaires {
@@ -317,6 +325,10 @@ nav {
 }
 
 /* <------------ FOOTER ------------> */
+footer{
+    background-image: url(Images/backdropS2.png);
+  background-size: cover;
+}
 footer article{
   display: flex;
 }
@@ -325,4 +337,36 @@ footer article{
 }
 #findUs img{
 width: 4%;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+footer div{
+  width: 25%;
+  img{
+    width: unset;
+    object-fit: contain;
+  }
+}
+
+
+
+/* <------------ DOCUMENTATION ------------> */
+
+/* <------------ MAIN ------------> */
+/* <------------ SECTION DOCUMENTATION ------------> */
+
+#documentation {
+  text-align: center;
+  padding: 5rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#documentation div > h2 {
+  margin-bottom: 1rem;
 }
