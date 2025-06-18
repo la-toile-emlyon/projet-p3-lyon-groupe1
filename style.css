@@ -58,7 +58,7 @@ img{
   max-width: 1440px;
   margin: auto;
   width: 100%;
-  padding: 3rem;
+  padding: 1rem 3rem;
 }
 .marginBottom{
   margin-bottom: 16px;
@@ -117,7 +117,8 @@ button{
 header{
   background-image: url(Images/backdrop.png);
   background-size: cover;
-  height: 100vh;
+  padding: 2rem 0;
+  padding-top: 65px;
 }
 #logo{
   display: flex;
@@ -129,6 +130,7 @@ nav{
   align-items: center;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
   padding: 0 2rem;
+  position: fixed;
 }
 
 /* <------------ MAIN ------------> */
@@ -139,14 +141,31 @@ main{
   background-size: cover;
 }
 
+.partie1 {
+  display: flex;
+  
+}
+
 .contexte {
+  text-align: center;
   width: 50%;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
+.container-chiffre-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
 .chiffre-card {
+  width: 80%;
+  background-color: var(--Darken_white);
+  padding: 1rem 2rem;
   box-shadow: var(--shadow);
   border-radius: 20px;
   display: flex;
@@ -160,5 +179,6 @@ main{
 }
 
 .chiffre-card img {
-  width: 100%;
+  width: 15%;
+  object-fit: contain;
 }
