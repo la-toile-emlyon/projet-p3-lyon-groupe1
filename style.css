@@ -1,4 +1,374 @@
+/* Les Variables */
+:root {
+  /* Colors*/
+  --Soft_black: #01011D;
+  --Paragraph_col: #03045E;
+  --Glass_paragraph_col: #03045E80;
+  --Glass_darken_white: #F9F9F980;
+  --CTA_col: #0077B6;
+  --Button_col: #42A5D9;
+  --Glass_button_col: #42A5D980;
+  --Icon_col: #90E0EF;
+  --Darken_white: #F9F9F9;
+
+  /* Font items simplified */
+  --semi_bold: 600;
+  --medium: 500;
+
+  /* Border */
+  --radius: 20px;
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+}
+
+/* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
+
+/* ça c'etait déjà là */
 html {
   height: 100%;
   width: 100%;
+}
+
+/* Modification to all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--Darken_white);
+}
+
+img {
+  width: 100%;
+}
+
+/* flex class */
+.sectionFlex5050 {
+  width: 50%;
+}
+
+.sectionFlexSpaceBetween {
+  justify-content: space-between;
+}
+
+.sectionFlexSpaceEven {
+  justify-content: space-evenly;
+}
+
+.setFlex {
+  display: flex;
+}
+
+.flexColumn {
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 5rem;
+}
+
+.marginBottom {
+  margin-bottom: 3rem;
+}
+
+.marginTop {
+  margin-top: 16px;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.alignItemCenter{
+    align-items: center;
+}
+
+/* Text Items */
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: var(--Paragraph_col);
+}
+
+h2 {
+  font-weight: var(--semi_bold);
+  font-size: 38px;
+  color: var(--Paragraph_col);
+}
+
+h3 {
+  font-weight: var(--medium);
+  font-size: 22px;
+  color: var(--Paragraph_col);
+}
+
+.h2-spe {
+  font-size: 30px;
+}
+
+.h3-spe {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+  color: var(--Paragraph_col);
+}
+
+.highText {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Paragraph_col);
+}
+
+.currentPage {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
+/* Button */
+button {
+  width: 50%;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: var(--radius);
+  color: var(--Darken_white);
+  background-color: var(--CTA_col);
+  padding: 15px 30px;
+  border: none;
+  transition: scale 0.3s ease;
+}
+
+.buttonInactive {
+  background-color: var(--Darken_white);
+  color: var(--CTA_col);
+  border: solid 1px var(--CTA_col);
+}
+
+.downloadButt:hover {
+  border: none;
+  color: var(--Darken_white);
+  background-color: var(--Button_col);
+  scale: 1.02;
+}
+
+/* <------------ HEADER ------------> */
+#header {
+  background-image: url(Images/backdropV2.png);
+  background-size: cover;
+  padding: 2rem 0;
+  padding-top: 65px;
+}
+
+#logo {
+  display: flex;
+  width: 12%;
+}
+
+nav {
+  background-color: var(--Darken_white);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
+  padding: 0 5rem;
+  position: fixed;
+}
+
+.navHover:hover {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
+.accroche {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* <------------ MAIN ------------> */
+
+/* <------------ SECTION PROBLEMATIQUE ------------> */
+#problematique {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  /* background-image: url(Images/backdropS3.png);
+  background-size: cover; */
+}
+
+.partie1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+}
+
+.contexte {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-chiffre-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.chiffre-card {
+  width: 100%;
+  background-color: var(--Darken_white);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chiffre-card>div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chiffre-card img {
+  width: 15%;
+  object-fit: contain;
+}
+
+.partie2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-probleme {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.probleme-card {
+  width: 30%;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  background-color: var(--Darken_white);
+  text-align: center;
+}
+
+.probleme-card > div {
+  margin-bottom: 1rem;
+}
+
+.probleme-card img {
+  width: 20%;
+  object-fit: contain;
+}
+
+/* <------------ SECTION VOUS AIDEZ ------------> */
+/* #vousAidez {
+  background-image: url(Images/backdropS2.png);
+  background-size: cover;
+} */
+#vousAidez article{
+  width: 25%;
+  padding: 2%;
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+#vousAidez article img{
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+/* <------------ SECTION PARTENAIRES ------------> */
+
+#partenaires {
+  text-align: center;
+  padding: 2rem 5rem;
+  /* background-image: url(Images/backdropS4.png);
+  background-size: cover; */
+}
+
+.container-partenaires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-partenaires img {
+  width: 30%;
+  margin-top: 3rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}
+
+/* <------------ FOOTER ------------> */
+footer{
+    background-image: url(Images/backdropV2S2.png);
+  background-size: cover;
+}
+footer article{
+  display: flex;
+}
+#findUs{
+  display: flex;
+}
+#findUs img{
+width: 4%;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+footer div{
+  width: 25%;
+  img{
+    width: unset;
+    object-fit: contain;
+  }
+}
+
+
+
+/* <------------ DOCUMENTATION ------------> */
+
+/* <------------ MAIN ------------> */
+/* <------------ SECTION DOCUMENTATION ------------> */
+
+#documentation {
+  text-align: center;
+  padding: 5rem 5rem 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-image: url(Images/backdropDocTop.png);
+  background-size: cover;
+}
+
+#documentation div > h2 {
+  margin-bottom: 1rem;
 }

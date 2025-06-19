@@ -8,3 +8,14 @@ Ce document est une base de travail pour la réalisation de la landing page et d
 4. Concevez vos maquettes sur papier
 5. Choisissez les outils que vous utiliserez
 6. Codez vos pages web !
+
+
+
+
+- Initialisation 
+    - variables (couleurs, radius, box-shadow, spacing)
+    - h1, h2....
+    - reset
+- Classes composants (buttton, cta, card).
+- 1 fonctionnalité = 1 commit.
+- Quand on commit, on en parle au groupe.

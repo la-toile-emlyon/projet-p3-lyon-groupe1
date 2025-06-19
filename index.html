@@ -1,16 +1,238 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Page d'accueil</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-    <script src="script.js" type="text/javascript"></script>
-  </head>
 
-  <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Sanitoit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <link rel="shortcut icon" href="istockphoto-1321675978-612x612.jpg" type="image/x-icon"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+</head>
+<!--
+  Les classes:
+ highText; buttonInactive; sectionFlexSpaceBetween; 
+ sectionFlex5050; flexColumn; setFlex; container; 
+ marginBottom; textAlignCenter; downloadButt; navHover;
+ alignItemCenter;
+ -->
+
+<body>
+  <nav>
+    <section class="setFlex sectionFlex5050 alignItemCenter">
+      <a href="" id="logo">
+        <img src="Images/LogoSanitoit.png" alt="Sanitoit">
+      </a>
+    </section>
+    <section class="setFlex sectionFlex5050 sectionFlexSpaceBetween alignItemCenter">
+      <a href="#header" class="highText currentPage navHover">Accueil</a>
+      <a href="doc.html" class="highText navHover">Documentation</a>
+      <button class="buttonInactive downloadButt">Recevoir l'application</button>
+    </section>
+  </nav>
+  <header id="header" class="marginBottom">
+    <!-- Hero section -->
+    <section class="setFlex container alignItemCenter">
+      <section class="accroche">
+        <h1>Un logement indigne n'est pas une fatalité</h1>
+        <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir
+          grâce à notre application
+          en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape
+          de la démarche.</p>
+        <button class="downloadButt">Recevoir l'application</button>
+      </section>
+      <section class="setFlex sectionFlex5050 flexColumn">
+        <img src="Images/mockupPhone1v2.png" alt="" class="marginBottom marginTop">
+      </section>
+    </section>
+  </header>
+  <main>
+    
+    <section id="problematique">
+      <div class="partie1">
+        <div class="contexte">
+          <h2>Contexte</h2>
+          <p>En France, sur 38,2 millions de logements environ 600 000 logements sont insalubres, affectant jusqu’à 1,3
+            million de personnes. Ces logements, souvent anciens et mal entretenus, présentent des risques graves pour
+            la santé (maladies respiratoires, humidité, plomb) et aggravent l’isolement social.</p>
+          <p>Le nombre réel de logements insalubres est sous-estimé, car de nombreux cas ne sont pas déclarés. Cela
+            souligne la nécessité d’une meilleure détection, d’une mobilisation accrue et d’un accès facilité aux
+            dispositifs de signalement.</p>
+        </div>
+        <div class="container-chiffre-card">
+          <div class="chiffre-card">
+            <div>
+              <h2 class="h2-spe">600 000</h2>
+              <h3 class="h3-spe">Logements insalubres en France</h3>
+            </div>
+            <img src="Images/houseSymbol.png" alt="icône maison">
+          </div>
+          <div class="chiffre-card">
+            <div>
+              <h2 class="h2-spe">72 134</h2>
+              <h3 class="h3-spe">Signalement enregistrés</h3>
+            </div>
+            <img src="Images/bookSymbol.png" alt="icône livre">
+          </div>
+          <div class="chiffre-card">
+            <div>
+              <h2 class="h2-spe">10 341</h2>
+              <h3 class="h3-spe">Foyers sortie du mal-logement</h3>
+            </div>
+            <img src="Images/guySymbol.png" alt="icône personne">
+          </div>
+        </div>
+      </div>
+      <div class="partie2">
+        <h2>Un logement insalubre peut présenter</h2>
+        <div class="container-probleme">
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconDroplet.png" alt="">
+            </div>
+            <p>Humidité excessive et ou moisissure</p>
+          </div>
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconFan.png" alt="">
+            </div>
+            <p>Ventilation insuffisante</p>
+          </div>
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconDisconected.png" alt="">
+              <img src="Images/iconFlame.png" alt="">
+            </div>
+            <p>Installation électrique ou de gaz dangereuse</p>
+          </div>
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconRad.png" alt="">
+              <img src="Images/iconGlass.png" alt="">
+            </div>
+            <p>Manque de chauffage ou d’eau potable</p>
+          </div>
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconBug.png" alt="">
+              <img src="Images/iconMice.png" alt="">
+            </div>
+            <p>Infestation parasite</p>
+          </div>
+          <div class="probleme-card">
+            <div>
+              <img src="Images/iconCrack.png" alt="">
+            </div>
+            <p>Effondrement, mur et plafond fissuré ou dégradé</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ###################### -->
+    <!-- ##### Vous Aidez ##### -->
+    <!-- ###################### -->
+
+    <section id="vousAidez" class="textAlignCenter container">
+      <h2 class="marginBottom">Vous aidez, notre priorité</h2>
+      <p class="marginBottom">Beaucoup de locataires ne connaissent pas leurs droits face à l'insalubrité de leur
+        logement et hésitent
+        parfois à en parler par peur d'être jugés ou de subir des représailles, suite à ce constat
+        nous avons décidé d'agir.
+        Pour répondre à cette réalité, notre priorité est de faciliter la prise de parole et la défense des locataires
+        en leur offrant un moyen simple et sécurisé de signaler un problème d'insalubrité.
+        Nous avons créé une application qui permet au locataire de déposer facilement un dossier de litige auprès de la
+        mairie, établissant ainsi un lien direct et efficace avec les autorités compétentes.</p>
+      <!-- card container -->
+      <section class="setFlex sectionFlexSpaceBetween">
+        <article>
+          <img src="Images/helpGuy.png" alt="">
+          <p class="highText">Un formulaire simple à remplir</p>
+        </article>
+        <article>
+          <img src="Images/helpDesk.png" alt="">
+          <p class="highText">Une documentation pour connaître vos droits</p>
+        </article>
+        <article>
+          <img src="Images/helpPhone.png" alt="">
+          <p class="highText">Une messagerie pour faciliter vos prises de contacts</p>
+        </article>
+        <!-- Xana Ramos for Lightcurve Follow -->
+      </section>
+    </section>
+
+    <!-- ###################### -->
+    <!-- ##### Partenaire ##### -->
+    <!-- ###################### -->
+
+    <section id="partenaires">
+      <h2>Ils nous ont rejoints, pourquoi pas vous ?</h2>
+      <div class="container-partenaires">
+        <img src="Images/partner1.png" alt="">
+        <img src="Images/partner2.png" alt="">
+        <img src="Images/partner3.png" alt="">
+        <img src="Images/partner4.png" alt="">
+        <img src="Images/partner5.png" alt="">
+        <img src="Images/partner6.png" alt="">
+      </div>
+    </section>
+
+  </main>
+  <footer class="container textAlignCenter">
+    <section class="setFlex sectionFlexSpaceBetween marginBottom">
+      <div class="highText">
+        <p>Acces/contact</p>
+        <article>
+          <img src="Images/footerIconMap.png" alt="">
+          <p>13 rue Renée Cassin 60007 Lyon</p>
+        </article>
+        <article>
+          <img src="Images/footerIconPhone.png" alt="">
+          <p>04 32 12 56 78</p>
+        </article>
+      </div>
+      <div>
+        <p class="highText">Nous Contacter</p>
+        <p>Si vous avez des questions ou si vous souhaitez plus d'informations, n'hésitez pas à nous contacter</p>
+        <p>E-mail : contact@sanitoit.com</p>
+      </div>
+      <div>
+        <p class="highText">Newsletter</p>
+        <p class="marginBottom">En vous inscrivant a notre Newsletter vous acceptez de recevoir des communications et des informations par mail de notre part</p>
+        <button class="downloadButt">S'abonner</button>
+      </div>
+    </section>
+    <section id="findUs" class="sectionFlexSpaceEven marginBottom">
+      <h2>Retrouver nous sur :</h2>
+      <img src="Images/footerIconF.png" alt="">
+      <img src="Images/footerIconIN.png" alt="">
+      <img src="Images/footerIconX.png" alt="">
+      <img src="Images/footerIconO.png" alt="">
+    </section>
+    <p class="highText marginBottom">&copy2025 SANI'TOIT - CREATION DE SITE INTERNET PAR YAASA</p>
+    <section class="highText">
+      <ul>
+        <li>
+          <a href="">A propos</a>
+        </li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
+        <li>
+          <a href="">Conditions générales d'utilisation</a>
+        </li>
+        <li>
+          <a href="">Politique de confidentialité</a>
+        </li>
+        <li>
+          <a href="">Mentions légales</a>
+        </li>
+      </ul>
+    </section>
+  </footer>
+</body>
+<script src="script.js" type="text/javascript"></script>
+
 </html>
