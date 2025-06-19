@@ -365,6 +365,8 @@ footer div{
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  background-image: url(Images/backdropDocTop.png);
+  background-size: cover;
 }
 
 #documentation div > h2 {
