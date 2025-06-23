@@ -99,14 +99,14 @@ a {
 
 /* Button */
 .downloadButt{
-    width: 50%;
+  width: 50%;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
   border-radius: var(--radius);
   color: var(--Darken_white);
   background-color: var(--CTA_col);
-  padding: 15px 30px;
+  padding: 1rem;
   border: none;
   transition: scale 0.3s ease;
 }
@@ -401,6 +401,7 @@ i {
 }
 
 footer a:hover {
+  color: var(--Soft_black);
   text-decoration: underline;
 }
 
