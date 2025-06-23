@@ -411,12 +411,18 @@ footer a:hover {
 
 /* <------------ DOCUMENTATION ------------> */
 
+/* global */
+
+div > h2 {
+  margin-bottom: 1rem;
+}
+
 /* <------------ MAIN ------------> */
 /* <------------ SECTION DOCUMENTATION ------------> */
 
 #documentation {
   text-align: center;
-  padding: 5rem 5rem 2rem 5rem;
+  padding: 5rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -424,6 +430,53 @@ footer a:hover {
   background-size: cover;
 }
 
-#documentation div > h2 {
-  margin-bottom: 1rem;
+/* <------------ SECTION PERSONAS ------------> */
+
+#personas {
+  text-align: center;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.utilisateur {
+  display: flex;
+}
+
+.utilisateur img {
+  width: 50%;
+}
+
+/* <------------ SECTION FONCTIONNEMENT ------------> */
+
+#fonctionnement {
+  text-align: center;
+  padding: 2rem 10rem;
+}
+
+/* <------------ SECTION FONCTIONNALITES------------> */
+
+#fonctionnalites {
+  text-align: center;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.user-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* <------------ SECTION HAUTE-FIDELITE------------> */
+
+#haute-fidelite {
+  text-align: center;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
