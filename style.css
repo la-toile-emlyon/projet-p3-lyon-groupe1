@@ -44,6 +44,11 @@ img {
   width: 100%;
 }
 
+.line {
+  border: 1px solid var(--Glass_paragraph_col);
+  margin: 0 5rem;
+}
+
 /* Text Items */
 h1 {
   font-weight: bold;
@@ -278,7 +283,6 @@ nav {
   width: 100%;
   padding: 2rem 5rem;
     text-align: center;
-    /* background-color: var(--Glass_button_col); */
 }
 
 #vousAidez>*{
@@ -287,10 +291,10 @@ nav {
 
 #vousAidez article{
   width: 25%;
-  padding: 2%;
+  /* padding: 2%;
   background-color: white;
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow); */
 }
 #vousAidez article img{
   margin-bottom: 16px;
@@ -324,9 +328,10 @@ nav {
 }
 
 /* <------------ FOOTER ------------> */
-/* footer{
-      background-color: var(--Glass_button_col);
-} */
+footer{
+  background-color: var(--Icon_col);
+}
+
 i {
   color: var(--Button_col);
   font-size: 3rem;
@@ -336,10 +341,6 @@ i {
   display: flex;
   padding: 2rem 5rem;
   justify-content: space-between;
-}
-
-.info h3 {
-  text-align: center;
 }
 
 .info > div {
@@ -367,12 +368,16 @@ i {
   background-color:  var(--Darken_white);
   border: 2px solid var(--Paragraph_col);
   flex: 2;
+  border-radius: 10px;
 }
 
-/* #email::placeholder {
+#email::placeholder {
+  color: var(--Glass_paragraph_col);
+}
 
-  color: var(--Glass_darken_white);
-} */
+#email:focus {
+  outline: none;
+}
 
 .inscrire {
   flex: 1;
@@ -380,20 +385,23 @@ i {
 
 .reseaux {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .copyright {
   display: flex;
   justify-content: space-between;
   padding: 2rem 5rem;
-  background-color: var(--Icon_col);
 }
 
 .copyright ul {
   list-style-type: none;
   display: flex;
   gap: 2rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* <------------ DOCUMENTATION ------------> */
