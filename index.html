@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
+  <script src="https://kit.fontawesome.com/b5ee797e1e.js" crossorigin="anonymous"></script>
   <title>Sanitoit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- <link rel="shortcut icon" href="istockphoto-1321675978-612x612.jpg" type="image/x-icon"> -->
@@ -11,43 +12,42 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
   </style>
 </head>
-<!--
-  Les classes:
- highText; buttonInactive; sectionFlexSpaceBetween; 
- sectionFlex5050; flexColumn; setFlex; container; 
- marginBottom; textAlignCenter; downloadButt; navHover;
- alignItemCenter;
- -->
 
 <body>
   <nav>
-    <section class="setFlex sectionFlex5050 alignItemCenter">
+    <section class="navInside">
       <a href="" id="logo">
         <img src="Images/LogoSanitoit.png" alt="Sanitoit">
       </a>
     </section>
-    <section class="setFlex sectionFlex5050 sectionFlexSpaceBetween alignItemCenter">
+    <section class="navInside">
       <a href="#header" class="highText currentPage navHover">Accueil</a>
       <a href="doc.html" class="highText navHover">Documentation</a>
-      <button class="buttonInactive downloadButt">Recevoir l'application</button>
+      <a href="https://www.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=147%2C-540%2C0.39&t=Rp3pQdokwZol7qFH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1079&show-proto-sidebar=1" class="buttonInactive downloadButt">Recevoir l'application</a>
     </section>
   </nav>
-  <header id="header" class="marginBottom">
+  <header id="header">
     <!-- Hero section -->
-    <section class="setFlex container alignItemCenter">
-      <section class="accroche">
+    <section id="heroSec">
+      <section id="accroche">
         <h1>Un logement indigne n'est pas une fatalité</h1>
         <p>Ne restez pas seule face à cette situation, vous avez des droits, faites les valoir
           grâce à notre application
           en déposant un dossier de litige auprès de votre mairie. Nous nous engageons à vous accompagner à chaque étape
           de la démarche.</p>
-        <button class="downloadButt">Recevoir l'application</button>
+        <!-- <button class="downloadButt">Recevoir l'application</button> -->
+        <a href="https://www.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=147%2C-540%2C0.39&t=Rp3pQdokwZol7qFH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1079&show-proto-sidebar=1" class="downloadButt">Recevoir l'application</a>
       </section>
-      <section class="setFlex sectionFlex5050 flexColumn">
+      <section id="heroImg">
         <img src="Images/mockupPhone1v2.png" alt="" class="marginBottom marginTop">
       </section>
     </section>
   </header>
+  
+    <!-- ################ -->
+    <!-- ##### Main ##### -->
+    <!-- ################ -->
+
   <main>
     
     <section id="problematique">
@@ -135,9 +135,9 @@
     <!-- ##### Vous Aidez ##### -->
     <!-- ###################### -->
 
-    <section id="vousAidez" class="textAlignCenter container">
-      <h2 class="marginBottom">Vous aidez, notre priorité</h2>
-      <p class="marginBottom">Beaucoup de locataires ne connaissent pas leurs droits face à l'insalubrité de leur
+    <section id="vousAidez">
+      <h2>Vous aidez, notre priorité</h2>
+      <p>Beaucoup de locataires ne connaissent pas leurs droits face à l'insalubrité de leur
         logement et hésitent
         parfois à en parler par peur d'être jugés ou de subir des représailles, suite à ce constat
         nous avons décidé d'agir.
@@ -146,7 +146,7 @@
         Nous avons créé une application qui permet au locataire de déposer facilement un dossier de litige auprès de la
         mairie, établissant ainsi un lien direct et efficace avec les autorités compétentes.</p>
       <!-- card container -->
-      <section class="setFlex sectionFlexSpaceBetween">
+      <section id="helpCard">
         <article>
           <img src="Images/helpGuy.png" alt="">
           <p class="highText">Un formulaire simple à remplir</p>
@@ -180,57 +180,38 @@
     </section>
 
   </main>
-  <footer class="container textAlignCenter">
-    <section class="setFlex sectionFlexSpaceBetween marginBottom">
-      <div class="highText">
-        <p>Acces/contact</p>
-        <article>
-          <img src="Images/footerIconMap.png" alt="">
-          <p>13 rue Renée Cassin 60007 Lyon</p>
-        </article>
-        <article>
-          <img src="Images/footerIconPhone.png" alt="">
-          <p>04 32 12 56 78</p>
-        </article>
+  <footer>
+    <div class="info">
+      <div>
+        <h3>Accès / Contact</h3>
+        <p>13 Rue Renée Cassin 600007 Lyon</p>
+        <p>04 32 12 56 78</p>
+        <p>contact@sanitoit.com</p>
       </div>
       <div>
-        <p class="highText">Nous Contacter</p>
-        <p>Si vous avez des questions ou si vous souhaitez plus d'informations, n'hésitez pas à nous contacter</p>
-        <p>E-mail : contact@sanitoit.com</p>
+        <h3>Newlsletter</h3>
+        <p>N'hésitez pas à vous inscrire à notre newsletter pour recevoir les dernières nouvelles concernant nos mises à jour</p>
+        <form action="">
+          <input type="email" name="email" id="email" placeholder="Ex : contact@sanitoit.com">
+          <button>S'inscrire</button>
+        </form>
       </div>
       <div>
-        <p class="highText">Newsletter</p>
-        <p class="marginBottom">En vous inscrivant a notre Newsletter vous acceptez de recevoir des communications et des informations par mail de notre part</p>
-        <button class="downloadButt">S'abonner</button>
+        <h3>Suivez-nous</h3>
+        <div>
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-x-twitter"></i>
+        </div>
       </div>
-    </section>
-    <section id="findUs" class="sectionFlexSpaceEven marginBottom">
-      <h2>Retrouver nous sur :</h2>
-      <img src="Images/footerIconF.png" alt="">
-      <img src="Images/footerIconIN.png" alt="">
-      <img src="Images/footerIconX.png" alt="">
-      <img src="Images/footerIconO.png" alt="">
-    </section>
-    <p class="highText marginBottom">&copy2025 SANI'TOIT - CREATION DE SITE INTERNET PAR YAASA</p>
-    <section class="highText">
-      <ul>
-        <li>
-          <a href="">A propos</a>
-        </li>
-        <li>
-          <a href="">FAQ</a>
-        </li>
-        <li>
-          <a href="">Conditions générales d'utilisation</a>
-        </li>
-        <li>
-          <a href="">Politique de confidentialité</a>
-        </li>
-        <li>
-          <a href="">Mentions légales</a>
-        </li>
-      </ul>
-    </section>
+    </div>
+    <div class="copyright">
+      <!-- si jamais, le symbol du copyright, tu peux l'ecrire &copy okay -->
+      <p>&copy; 2025 Sani'Toit - Création de site internet par YAASA - All right reserved</p>
+      <a href="">Politique de confidentialité</a>
+      <a href=""> Mentions légales</a>
+    </div>
   </footer>
 </body>
 <script src="script.js" type="text/javascript"></script>
