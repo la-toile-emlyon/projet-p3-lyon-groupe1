@@ -156,9 +156,8 @@ nav {
 #header {
   background-image: url(Images/backdropV2.png);
   background-size: cover;
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   padding-top: 65px;
-    margin-bottom: 3rem;
 }
 
 #accroche {
@@ -188,7 +187,7 @@ nav {
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
 #problematique {
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -286,7 +285,7 @@ nav {
   max-width: 1440px;
   margin: auto;
   width: 100%;
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -313,7 +312,7 @@ nav {
 
 #partenaires {
   text-align: center;
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   /* background-image: url(Images/backdropS4.png);
   background-size: cover; */
 }
@@ -343,7 +342,7 @@ i {
 
 .info {
   display: flex;
-  padding: 2rem 10rem;
+  padding: 3rem 10rem;
   justify-content: space-between;
 }
 
@@ -370,6 +369,7 @@ i {
   font-size: 18px;
   padding: 0 1rem;
   background-color:  var(--Darken_white);
+  color: var(--Paragraph_col);
   border: 2px solid var(--Paragraph_col);
   flex: 2;
   border-radius: 10px;
@@ -413,8 +413,17 @@ footer a:hover {
 
 /* global */
 
-div > h2 {
+#main-doc div > h2, #main-doc div > h3, #futur h2 {
   margin-bottom: 1rem;
+}
+
+#personas, #fonctionnement, #futur {
+  text-align: center;
+  padding: 5rem 10rem;
+}
+
+#personas p, #fonctionnement p, .user-flow p {
+  margin-bottom: 3rem;
 }
 
 /* <------------ MAIN ------------> */
@@ -425,20 +434,12 @@ div > h2 {
   padding: 5rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 5rem;
   background-image: url(Images/backdropDocTop.png);
   background-size: cover;
 }
 
 /* <------------ SECTION PERSONAS ------------> */
-
-#personas {
-  text-align: center;
-  padding: 2rem 10rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
 
 .utilisateur {
   display: flex;
@@ -450,33 +451,39 @@ div > h2 {
 
 /* <------------ SECTION FONCTIONNEMENT ------------> */
 
-#fonctionnement {
-  text-align: center;
-  padding: 2rem 10rem;
-}
 
 /* <------------ SECTION FONCTIONNALITES------------> */
 
 #fonctionnalites {
   text-align: center;
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
-}
-
-.user-flow {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  gap: 7rem;
 }
 
 /* <------------ SECTION HAUTE-FIDELITE------------> */
 
 #haute-fidelite {
   text-align: center;
-  padding: 2rem 10rem;
+  padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
+}
+
+.explication {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0;
+}
+
+.explication img {
+  margin-bottom: 1rem;
+}
+
+/* <------------ SECTION FUTUR------------> */
+
+#futur {
+  text-align: center;
 }

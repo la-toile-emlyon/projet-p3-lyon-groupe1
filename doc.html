@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
+  <script src="https://kit.fontawesome.com/b5ee797e1e.js" crossorigin="anonymous"></script>
   <title>Sanitoit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <!-- <link rel="shortcut icon" href="istockphoto-1321675978-612x612.jpg" type="image/x-icon"> -->
@@ -23,11 +24,11 @@
       <section class="navInside">
         <a href="index.html" class="highText navHover">Accueil</a>
         <a href="doc.html" class="highText currentPage navHover">Documentation</a>
-        <a href="https://www.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=147%2C-540%2C0.39&t=Rp3pQdokwZol7qFH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1079&show-proto-sidebar=1" class="buttonInactive downloadButt">Recevoir l'application</a>
+        <a href="https://www.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=147%2C-540%2C0.39&t=Rp3pQdokwZol7qFH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1079&show-proto-sidebar=1" class="buttonInactive downloadButt">Télécharger l'application</a>
       </section>
     </nav>
   </header>
-  <main>
+  <main id="main-doc">
     <section id="documentation">
       <h1>Documentation</h1>
       <div>
@@ -97,14 +98,59 @@
       <div class="mockup">
         <h3>Interface mairie</h3>
         <p>Concernant l’interface mairie, lors des tests utilisateurs 2 besoins importants ont été remontés par les agents du service d’hygiène et de santé :</p>
+        <div class="explication">
+          <div>
+            <img src="Images/doc-explication1.png" alt="">
+            <p>La centralisation des signalements dans un même outil</p>
+          </div>
+          <div>
+            <img src="Images/doc-explication2.png" alt="">
+            <p>Avoir un contact direct et privilégié avec les bailleurs</p>
+          </div>
+        </div>
+        <p>Notre  interface n’est pour le moment pas encore développée mais celle-ci est en projet. <br> Elle se présentera sous forme de page web et non d’application pour un meilleur traitement et gestion des dossiers et elle intégrera comme fonctionnalité principale les besoins évoqués précédemment. <br> Elle sera simple, intuitive avec un design agréable reprenant celle de l’application</p>
       </div>
-      <div class="explication"></div>
-      <p>Notre  interface n’est pour le moment pas encore développée mais celle-ci est en projet. <br> Elle se présentera sous forme de page web et non d’application pour un meilleur traitement et gestion des dossiers et elle intégrera comme fonctionnalité principale les besoins évoqués précédemment. <br> Elle sera simple, intuitive avec un design agréable reprenant celle de l’application</p>
     </section>
 
     <section id="futur">
       <h2>Evolution futur</h2>
+      <h3>Nous recherchons dès à présent des gens motivés à nous rejoindre pour nous aider à terminer le développement de notre application. <br><br>Venez Nombreux !</h3>
     </section>
   </main>
+
+  <footer>
+    <div class="info">
+      <div class="acces">
+        <h3>Accès / Contact</h3>
+        <p>13 Rue Renée Cassin 600007 Lyon <br>04 32 12 56 78 <br> contact@sanitoit.com</p>
+      </div>
+      <div class="newsletter">
+        <h3>Newlsletter</h3>
+        <p>N'hésitez pas à vous inscrire à notre newsletter pour recevoir les dernières nouvelles concernant nos futur
+          mises à jour.</p>
+        <form action="">
+          <input type="email" name="email" id="email" placeholder="Ex : contact@sanitoit.com">
+          <button class="downloadButt inscrire">S'inscrire</button>
+        </form>
+      </div>
+      <div class="suivre">
+        <h3>Suivez-nous</h3>
+        <div class="reseaux">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="copyright">
+      <p>&copy; 2025 Sani'Toit - Créer par YAASA - All right reserved</p>
+      <ul>
+        <li><a href="">Politique de confidentialité</a></li>
+        <li><a href="">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
