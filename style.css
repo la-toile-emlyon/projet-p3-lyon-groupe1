@@ -17,7 +17,8 @@
 
   /* Border */
   --radius: 20px;
-  --shadow: 0px 0px 10px rgba(0, 0, 0, 25%);
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 10%);
+  /* --shadow: rgba(66, 164, 217, 0.742); */
 }
 
 /* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
@@ -191,10 +192,10 @@ nav {
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
 #problematique {
-  padding: 5rem 10rem;
+  padding: 10rem 10rem 5rem 10rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 10rem;
   /* background-image: url(Images/backdropS3.png);
   background-size: cover; */
 }
@@ -298,15 +299,15 @@ nav {
 
 #vousAidez article{
   width: 30%;
-  /* padding: 2%;
-  background-color: white;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow); */
+  border: 3px dashed var(--Button_col);
+  padding: 1rem;
 }
+
 #vousAidez article img{
   margin-bottom: 16px;
   object-fit: contain;
 }
+
 #helpCard{
   display: flex;
   justify-content: space-between;
@@ -330,7 +331,7 @@ nav {
 .container-partenaires img {
   width: 30%;
   margin-top: 3rem;
-  box-shadow: var(--shadow);
+  /* box-shadow: var(--shadow); */
   border-radius: 20px;
 }
 
@@ -466,6 +467,14 @@ footer a:hover {
   gap: 7rem;
 }
 
+.user-flow img:first-of-type {
+  margin-bottom: 3rem;
+}
+
+.uf3 {
+  width: 70%;
+}
+
 /* <------------ SECTION HAUTE-FIDELITE------------> */
 
 #haute-fidelite {
@@ -479,11 +488,13 @@ footer a:hover {
 .explication {
   display: flex;
   justify-content: space-between;
-  margin: 3rem 0;
+  margin-bottom: 5rem;
 }
 
 .explication img {
   margin-bottom: 1rem;
+  object-fit: contain;
+  height: 400px;
 }
 
 /* <------------ SECTION FUTUR------------> */
