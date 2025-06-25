@@ -104,6 +104,7 @@ a {
 
 /* Button */
 .downloadButt{
+  display: inline-block;
   width: fit-content;
   font-weight: bold;
   font-size: 20px;
@@ -112,14 +113,13 @@ a {
   color: var(--Darken_white);
   background-color: var(--CTA_col);
   padding: 1rem;
-  border: none;
+  border: solid 1px var(--CTA_col);
   transition: scale 0.3s ease;
 }
 
 .buttonInactive {
   background-color: var(--Darken_white);
   color: var(--CTA_col);
-  border: solid 1px var(--CTA_col);
 }
 
 .downloadButt:hover {
@@ -192,7 +192,7 @@ nav {
 
 /* <------------ SECTION PROBLEMATIQUE ------------> */
 #problematique {
-  padding: 10rem 10rem 5rem 10rem;
+  padding: 10rem 0 5rem 0;
   display: flex;
   flex-direction: column;
   gap: 10rem;
@@ -204,6 +204,7 @@ nav {
   display: flex;
   flex-direction: row-reverse;
   gap: 5rem;
+  padding: 0 10rem;
 }
 
 .contexte {
@@ -255,6 +256,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  background-color: var(--Icon_col);
+  padding: 2rem 10rem;
 }
 
 .container-probleme {
@@ -334,6 +337,20 @@ nav {
   margin-top: 3rem;
   /* box-shadow: var(--shadow); */
   border-radius: 20px;
+}
+
+/* <------------ SECTION APPEL ------------> */
+
+#appel {
+  text-align: center;
+  padding: 5rem 0rem;
+  margin: 0 10rem 5rem 10rem;
+  background-color: var(--Icon_col);
+  border-radius: 200px;
+}
+
+#appel h2 {
+  margin-bottom: 3rem;
 }
 
 /* <------------ FOOTER ------------> */
@@ -441,7 +458,7 @@ footer a:hover {
 
 #documentation {
   text-align: start;
-  padding: 5rem 10rem 2rem 10rem;
+  padding: 8rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
   gap: 5rem;
@@ -483,7 +500,7 @@ footer a:hover {
 /* <------------ SECTION HAUTE-FIDELITE------------> */
 
 #haute-fidelite {
-  text-align: start;
+  text-align: center;
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
