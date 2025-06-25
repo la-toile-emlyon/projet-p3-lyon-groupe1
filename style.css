@@ -53,7 +53,7 @@ img {
 /* Text Items */
 h1 {
   font-weight: bold;
-  font-size: 48px;
+  font-size: 45px;
   color: var(--Paragraph_col);
 }
 
@@ -166,7 +166,7 @@ nav {
 }
 
 #accroche {
-  text-align: center;
+  text-align: start;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -423,16 +423,16 @@ footer a:hover {
 
 /* global */
 
-#main-doc div > h2, #main-doc div > h3, #futur h2 {
+#main-doc div > h2, #main-doc div > h3, #futur h2, #futur h3 {
   margin-bottom: 1rem;
 }
 
 #personas, #fonctionnement, #futur {
-  text-align: center;
+  text-align: start;
   padding: 5rem 10rem;
 }
 
-#personas p, #fonctionnement p, .user-flow p, #futur p {
+#personas p, #fonctionnement p, .user-flow p, #futur > p {
   margin-bottom: 3rem;
 }
 
@@ -440,7 +440,7 @@ footer a:hover {
 /* <------------ SECTION DOCUMENTATION ------------> */
 
 #documentation {
-  text-align: center;
+  text-align: start;
   padding: 5rem 10rem 2rem 10rem;
   display: flex;
   flex-direction: column;
@@ -483,7 +483,7 @@ footer a:hover {
 /* <------------ SECTION HAUTE-FIDELITE------------> */
 
 #haute-fidelite {
-  text-align: center;
+  text-align: start;
   padding: 5rem 10rem;
   display: flex;
   flex-direction: column;
@@ -493,7 +493,7 @@ footer a:hover {
 .explication {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .explication img {
@@ -505,7 +505,7 @@ footer a:hover {
 /* <------------ SECTION FUTUR------------> */
 
 #futur {
-  text-align: center;
+  text-align: start;
 }
 
 #futur ul {
