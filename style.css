@@ -343,10 +343,12 @@ nav {
 
 #appel {
   text-align: center;
-  padding: 5rem 0rem;
-  margin: 0 10rem 5rem 10rem;
-  background-color: var(--Icon_col);
-  border-radius: 200px;
+  padding: 9rem 10rem;
+  background-image: url(Images/cta-cloud-V3.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
 }
 
 #appel h2 {
