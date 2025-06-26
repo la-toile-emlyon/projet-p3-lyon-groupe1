@@ -1,4 +1,548 @@
+/* Les Variables */
+:root {
+  /* Colors*/
+  --Soft_black: #01011D;
+  --Paragraph_col: #03045E;
+  --Glass_paragraph_col: #03045E80;
+  --Glass_darken_white: #F9F9F980;
+  --CTA_col: #0077B6;
+  --Button_col: #42A5D9;
+  --Glass_button_col: #42A5D980;
+  --Icon_col: #90E0EF;
+  --Darken_white: #F9F9F9;
+
+  /* Font items simplified */
+  --semi_bold: 600;
+  --medium: 500;
+
+  /* Border */
+  --radius: 20px;
+  --shadow: 0px 0px 10px rgba(0, 0, 0, 10%);
+}
+
+/* Source Code Couleur Hex Pour La Trancparence: https://css-tricks.com/8-digit-hex-codes/*/
+
+/* ça c'etait déjà là */
 html {
   height: 100%;
   width: 100%;
+  font-size: 18px;
+}
+
+/* Modification to all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--Darken_white);
+}
+
+img {
+  width: 100%;
+}
+
+.line {
+  border: 1px solid var(--Glass_paragraph_col);
+  margin: 0 10rem;
+}
+
+.partie1, .partie2, #vousAidez, #partenaires, #appel, footer, #documentation, #personas, #fonctionnement, #fonctionnalites, #haute-fidelite, #futur  {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Text Items */
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: var(--Paragraph_col);
+}
+
+h2 {
+  font-weight: var(--semi_bold);
+  font-size: 38px;
+  color: var(--Paragraph_col);
+}
+
+h3 {
+  font-weight: var(--medium);
+  font-size: 22px;
+  color: var(--Paragraph_col);
+}
+
+.h2-spe {
+  font-size: 30px;
+}
+
+.h3-spe {
+  font-size: 18px;
+}
+
+p, li {
+  font-size: 18px;
+  color: var(--Paragraph_col);
+}
+
+.highText {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+p.highText {
+  margin-bottom: 1rem;
+}
+
+a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--Paragraph_col);
+}
+
+.currentPage {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
+/* Button */
+.downloadButt{
+  display: inline-block;
+  width: fit-content;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: var(--radius);
+  color: var(--Darken_white);
+  background-color: var(--CTA_col);
+  padding: 1rem;
+  border: solid 1px var(--CTA_col);
+  transition: scale 0.3s ease;
+}
+
+.buttonInactive {
+  background-color: var(--Darken_white);
+  color: var(--CTA_col);
+}
+
+.downloadButt:hover {
+  border: none;
+  color: var(--Darken_white);
+  background-color: var(--Button_col);
+  scale: 1.02;
+}
+
+/*  <------------ Nav ------------>  */
+nav {
+  background-color: var(--Darken_white);
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 5%);
+  padding: 0 5rem;
+  position: fixed;
+  width: 100%;
+}
+
+.navHover:hover {
+  border-bottom: solid 2px var(--Button_col);
+  color: var(--Button_col);
+}
+
+.navInside{
+  display: flex;
+    width: 50%;
+       align-items: center;
+         justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  width: 12%;
+}
+
+/* <------------ HEADER ------------> */
+#header {
+  background-image: url(Images/backdropV2.png);
+  background-size: cover;
+  padding: 5rem 10rem;
+  padding-top: 65px;
+}
+
+#header h1 {
+  text-align: center;
+}
+
+#accroche {
+  text-align: start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+#heroSec{
+    display: flex;
+      max-width: 1440px;
+  margin: auto;
+  width: 100%;
+      align-items: center;
+      height: 100vh;
+}
+
+#heroImg{
+    width: 50%;
+  display: flex;
+}
+
+/* <------------ MAIN ------------> */
+
+/* <------------ SECTION PROBLEMATIQUE ------------> */
+#problematique {
+  padding: 10rem 0 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  /* background-image: url(Images/backdropS3.png);
+  background-size: cover; */
+}
+
+.partie1 {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  padding: 0 10rem;
+}
+
+.contexte {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contexte > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.container-chiffre-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chiffre-card {
+  width: 100%;
+  background-color: var(--Darken_white);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chiffre-card>div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iconCenter{
+  width: 10%;
+  text-align: center;
+}
+
+
+.partie2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 10rem;
+}
+
+.container-partie2 {
+  background-color: var(--Icon_col);
+}
+
+.container-probleme {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.probleme-card {
+  width: 30%;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  background-color: var(--Darken_white);
+  text-align: center;
+}
+
+.probleme-card > div {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.probleme-card img {
+  width: 20%;
+  object-fit: contain;
+}
+
+/* <------------ SECTION VOUS AIDEZ ------------> */
+#vousAidez {
+  width: 100%;
+  padding: 5rem 10rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#vousAidez article{
+  width: 30%;
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+#vousAidez article img{
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+#helpCard{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* <------------ SECTION PARTENAIRES ------------> */
+
+#partenaires {
+  text-align: center;
+  padding: 5rem 10rem;
+  /* background-image: url(Images/backdropS4.png);
+  background-size: cover; */
+}
+
+.container-partenaires {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container-partenaires img {
+  width: 30%;
+  margin-top: 3rem;
+  /* box-shadow: var(--shadow); */
+  border-radius: 20px;
+}
+
+/* <------------ SECTION APPEL ------------> */
+
+#appel {
+  text-align: center;
+  padding: 9rem 10rem;
+  background-image: url(Images/cta-cloud-V3.png);
+  background-position: center;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  margin-bottom: 5rem;
+}
+
+#appel h2 {
+  margin-bottom: 3rem;
+}
+
+/* <------------ FOOTER ------------> */
+.containerFooter {
+  background-color: var(--Icon_col);
+}
+
+i {
+  color: var(--Button_col);
+  font-size: 3rem;
+}
+
+footer i {
+  color: var(--CTA_col);
+}
+
+.info {
+  display: flex;
+  padding: 3rem 10rem;
+  justify-content: space-between;
+}
+
+.info > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.acces, .suivre {
+  width: 20%;
+}
+
+.newsletter {
+  width: 50%;
+}
+
+.newsletter form {
+  display: flex;
+  gap: 2rem;
+}
+
+#email {
+  font-size: 18px;
+  padding: 0 1rem;
+  background-color:  var(--Darken_white);
+  color: var(--Paragraph_col);
+  border: 2px solid var(--Paragraph_col);
+  flex: 2;
+  border-radius: 10px;
+}
+
+#email::placeholder {
+  color: var(--Glass_paragraph_col);
+}
+
+#email:focus {
+  outline: none;
+}
+
+.inscrire {
+  flex: 1;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 10rem;
+}
+
+.copyright ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+footer a:hover {
+  color: var(--Soft_black);
+  text-decoration: underline;
+}
+
+/* <------------ DOCUMENTATION ------------> */
+
+/* global */
+
+#main-doc div > h2, #main-doc div > h3, #futur h2, #futur h3 {
+  margin-bottom: 1rem;
+}
+
+#personas, #fonctionnement, #futur {
+  text-align: start;
+  padding: 5rem 10rem;
+}
+
+#personas p, #fonctionnement p, .user-flow p, #futur > p {
+  margin-bottom: 3rem;
+}
+
+/* <------------ MAIN ------------> */
+/* <------------ SECTION DOCUMENTATION ------------> */
+
+#documentation {
+  text-align: start;
+  padding: 8rem 10rem 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  background-size: cover;
+}
+
+.container-documentation {
+  background-image: url(Images/backdropDocTop.png);
+}
+
+/* <------------ SECTION PERSONAS ------------> */
+
+.utilisateur {
+  display: flex;
+}
+
+.utilisateur img {
+  width: 50%;
+}
+
+/* <------------ SECTION FONCTIONNEMENT ------------> */
+
+
+/* <------------ SECTION FONCTIONNALITES------------> */
+
+#fonctionnalites {
+  text-align: center;
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.user-flow img:first-of-type {
+  margin-bottom: 3rem;
+}
+
+.uf3 {
+  width: 74%;
+}
+
+/* <------------ SECTION HAUTE-FIDELITE------------> */
+
+#haute-fidelite {
+  text-align: center;
+  padding: 5rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.explication {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.explication img {
+  margin-bottom: 1rem;
+  object-fit: contain;
+  height: 400px;
+}
+
+/* <------------ SECTION FUTUR------------> */
+
+#futur {
+  text-align: start;
+}
+
+#futur ul {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

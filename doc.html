@@ -1,15 +1,185 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Projet - Documentation</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link href="doc.css" rel="stylesheet" type="text/css" />
-  </head>
 
-  <body>
-    <a href="/index.html">Accueil</a>
-    Documentation
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <script src="https://kit.fontawesome.com/b5ee797e1e.js" crossorigin="anonymous"></script>
+  <title>SANI'TOIT</title>
+  <link rel="shortcut icon" href="Images/LogoSanitoit.png" type="image/x-icon">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- <link rel="shortcut icon" href="istockphoto-1321675978-612x612.jpg" type="image/x-icon"> -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <section class="navInside">
+        <a href="index.html" id="logo">
+          <img src="Images/LogoSanitoit.png" alt="Sanitoit">
+        </a>
+      </section>
+      <section class="navInside">
+        <a href="index.html" class="highText navHover">Accueil</a>
+        <a href="doc.html" class="highText currentPage navHover">Documentation</a>
+        <a href="https://www.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=147%2C-540%2C0.39&t=Rp3pQdokwZol7qFH-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=85%3A1079&show-proto-sidebar=1"
+          class="buttonInactive downloadButt">Télécharger l'application</a>
+      </section>
+    </nav>
+  </header>
+  <main id="main-doc">
+    <div class="container-documentation">
+      <section id="documentation">
+      <h1>Documentation</h1>
+      <div>
+        <h2>Notre projet</h2>
+        <p>Notre application vise à améliorer la communication entre les locataires et les bailleurs sociaux face aux
+          problèmes d’insalubrité. Elle permet aux locataires de signaler facilement les dégradations ou conditions
+          précaires dans son logement (humidité, moisissures, parasites etc...).</p>
+      </div>
+      <div>
+        <h2>Notre mission</h2>
+        <p>Elle vise à offrir un outil simple, rapide et accessible à tous pour le signalement de dégradations lié aux
+          logements, permettre un suivi transparent des interventions, et encourager une réactivité plus efficace des
+          bailleurs. Notre objectif est de contribuer à l’amélioration durable des conditions de vie en garantissant un
+          logement sain, digne et sécurisé pour tous.</p>
+      </div>
+    </section>
+    </div>
+
+    <section id="personas">
+      <div>
+        <h2>Personas</h2>
+        <p>Toute personne peut vivre une situation de mal logement, qu’elle soit locataire ou membre du domicile,
+          qu’elle soit jeune ou non, tout le monde est concerné. Suite à nos enquêtes de terrain, nous avons fait le
+          choix de mettre en avant ces 2 personas : un étudiant qui travaille en entreprise et une mère divorcée, avec un enfant, tous deux vivants dans un appartement. </p>
+      </div>
+      <div class="utilisateur">
+        <img src="Images/docPersonaOne.png" alt="">
+        <img src="Images/docPersonaTwo.png" alt="">
+      </div>
+    </section>
+
+    <section id="fonctionnement">
+      <div>
+        <h2>Comment ça fonctionne ?</h2>
+        <p>Par le biais d’une interface simple et intuitive, le locataire pourra déposer en ligne son dossier de litige
+          qui sera traité par un conseiller de la mairie dans les plus bref délais. Il est accompagné tout au long de sa
+          démarche jusqu’à la résolution de son problème.</p>
+      </div>
+      <img src="Images/docParcour.png" alt="">
+    </section>
+
+    <section id="fonctionnalites">
+      <div>
+        <h2>Fonctionnalités</h2>
+        <p>Les tests utilisateurs faits en amont nous ont permis de cibler et de répondre aux besoins des futurs
+          utilisateurs. Grâce à cela, l’application regroupe plusieurs fonctionnalités indispensables et nécessaires à
+          son bon fonctionnement telles que :</p>
+      </div>
+      <div class="user-flow">
+        <h3>Le dépôt de dossier de litige</h3>
+        <p>Permet à l’utilisateur de déposer un dossier de litige</p>
+        <img src="Images/docUserFlow1.png" alt="">
+        <img class="uf3" src="Images/doc-UF-1.png" alt="">
+      </div>
+      <div class="user-flow">
+        <h3>L’ajout de tiers personnes au dossier </h3>
+        <p>Possibilité d’ajouter des “voisins” aux dossiers de litiges pour un signalement plus impactant</p>
+        <img src="Images/docUserFlow2.png" alt="">
+        <img class="uf3" src="Images/doc-UF-2.png" alt="">
+      </div>
+      <div class="user-flow">
+        <h3>Calendrier</h3>
+        <p>Pour une prise de rendez-vous de façon autonome, simple et rapide</p>
+        <img src="Images/docUserFlow3.png" alt="">
+        <img class="uf4" src="Images/doc-UF-3.png" alt="">
+      </div>
+      <div class="user-flow">
+        <h3>Messagerie</h3>
+        <p>Permet d’échanger de façon directe avec sa référente mais aussi avec les “voisins”</p>
+        <img src="Images/docUserFlow4.png" alt="">
+        <img class="uf3" src="Images/doc-UF-4.png" alt="">
+      </div>
+    </section>
+
+    <section id="haute-fidelite">
+      <div>
+        <h2>Haute fidélité</h2>
+        <p>Version haute fidélité finale de notre application mobile.</p>
+      </div>
+      <div class="mockup">
+        <h3>Interface utilisateur</h3>
+        <iframe style="border: none;" width="800" height="550" src="https://embed.figma.com/proto/JppoJyUxKoQPEpsvn5Uu4B/SAAAY?page-id=79%3A4843&node-id=85-1079&viewport=-173%2C-737%2C0.48&scaling=contain&content-scaling=fixed&starting-point-node-id=85%3A1079&embed-host=share" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="futur">
+      <h2>Avenir</h2>
+      <p>Nous souhaitons faire évoluer notre application au plus près des besoins réels des locataires. C’est pourquoi nous avons déjà identifié plusieurs axes d’améliorations :</p>
+      <div class="mockup">
+        <h3>Interface mairie</h3>
+        <p>Développer une interface dédiée aux mairies, adaptée à leurs besoins, pour faciliter le traitement des signalements et la collaboration locale</p>
+        <div class="explication">
+          <div>
+            <img src="Images/doc-explication1.png" alt="">
+            <p>La centralisation des signalements dans un même outil</p>
+          </div>
+          <div>
+            <img src="Images/doc-explication2.png" alt="">
+            <p>Avoir un contact direct et privilégié avec les bailleurs</p>
+          </div>
+        </div>
+      </div>
+      <h3>D'autres améliorations</h3>
+      <ul>
+        <li>Terminer la documentation sur les droits et les démarches liés à l'insalubrité</li>
+        <li>Renforcer notre réseau en nouant de nouveaux partenariats à l’échelle nationale, avec des associations, bailleurs et acteurs publics</li>
+        <li>Mettre en place une hotline psychologique, gratuite et confidentielle, animée par des psychologues formés aux situations de mal-logement</li>
+      </ul>
+    </section>
+  </main>
+
+  <div class="containerFooter">
+    <footer>
+    <div class="info">
+      <div class="acces">
+        <h3>Accès / Contact</h3>
+        <p>13 Rue Renée Cassin 600007 Lyon <br>04 32 12 56 78 <br> contact@sanitoit.com</p>
+      </div>
+      <div class="newsletter">
+        <h3>Newlsletter</h3>
+        <p>N'hésitez pas à vous inscrire à notre newsletter pour recevoir les dernières nouvelles concernant nos futures
+          mises à jour.</p>
+        <form action="">
+          <input type="email" name="email" id="email" placeholder="Ex : contact@sanitoit.com">
+          <button class="downloadButt inscrire">S'inscrire</button>
+        </form>
+      </div>
+      <div class="suivre">
+        <h3>Suivez-nous</h3>
+        <div class="reseaux">
+          <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="copyright">
+      <!-- <p>&copy; 2025 Sani'Toit - Créer par YAASA - All right reserved</p> -->
+      <p>&copy; 2025 Sani'Toit - Créer par AASA - All right reserved</p>
+      <ul>
+        <li><a href="">Politique de confidentialité</a></li>
+        <li><a href="">Mentions légales</a></li>
+      </ul>
+    </div>
+  </footer>
+  </div>
+</body>
+
 </html>
